@@ -102,7 +102,7 @@ hint: 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 是因为远程repository和我本地的repository冲突导致的，如下解决方法：
-* 1:
+* 1:<br>
 `git pull origin master` <br>
 `git push -u origin master`
 * 2:若不想merge远程和本地修改，可以先创建新的分支：<br>
