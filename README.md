@@ -2,12 +2,12 @@
 
 ## 基于Swift3.0实现全屏侧滑返回
 
-### features
-* 解决自定义navigationBar侧滑返回失效的时候快速帮你实现侧滑返回功能。
+### Features
+* 解决自定义navigationBar侧滑返回不能用快速帮你实现侧滑返回功能。
 * 解决当某个界面navigationBar隐藏时下个界面有导航导致侧滑返回体验很差。
 * 解决UIScrollView不能使用侧滑返回。
 
-### Usage
+### How to use
 `platform :ios, '7.0'`
 ```objc
 target 'Your Project' do
