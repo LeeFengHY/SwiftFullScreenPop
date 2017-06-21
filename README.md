@@ -105,7 +105,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 * 1:
 `git pull origin master` <br>
 `git push -u origin master`
-* 2:若不想merge远程和本地修改，可以先创建新的分支：
+* 2:若不想merge远程和本地修改，可以先创建新的分支：<br>
 `git branch [name]` <br>
 `git push -u origin [name]`
 ### 联系
