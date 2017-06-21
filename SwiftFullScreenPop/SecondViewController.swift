@@ -15,7 +15,7 @@ class SecondViewController: UIViewController {
         isInteractivePopDisable = true
         title = "Second"
         view.backgroundColor = UIColor.blue
-        
+
     }
 }
 

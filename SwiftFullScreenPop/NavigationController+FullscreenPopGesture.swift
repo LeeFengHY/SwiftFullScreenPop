@@ -72,6 +72,7 @@ extension UINavigationController
             delegate?.navgationController = self
             objc_setAssociatedObject(self, AssociatedKey.fullsreenDelegate, delegate, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
+        
         return delegate
     }
   
