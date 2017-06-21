@@ -15,14 +15,7 @@ class SecondViewController: UIViewController {
         isInteractivePopDisable = true
         title = "Second"
         view.backgroundColor = UIColor.blue
-        self.navigationController?.interactivePopGestureRecognizer
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
