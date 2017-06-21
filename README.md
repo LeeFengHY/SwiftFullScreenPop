@@ -1,6 +1,6 @@
 # SwiftFullScreenPop
 
-基于Swift3.0实现全屏侧滑返回
+## 基于Swift3.0实现全屏侧滑返回
 
 ### features
 * 解决自定义navigationBar侧滑返回失效的时候快速帮你实现侧滑返回功能。
@@ -77,7 +77,21 @@ DispatchQueue.once(token: Static.token) {
 * 具体看Demo代码。参考：[forkingdog](https://github.com/forkingdog/FDFullscreenPopGesture)
 
 ### 在实现cocoaPods遇到的坑
+```objc
+[!] The validator for Swift projects uses Swift 3.0 by default, if you are using a different version of swift you can use a `.swift-version` file to set the version for your Pod. For example to use Swift 2.3, run: 
+    `echo "2.3" > .swift-version`. 
+```
+在终端里面执行：`echo "3.0" > .swift-version`
+* 如果提示Authentication token is invalid or unverified. Either verify it with the email that was sent or register a new session.
+重新在终端里面执行：`pod trunk register 邮箱名 “用户名”` 再到邮箱里面重新验证即可
+* 如果想知道如何实现自己的代码用cocoapods管理可移动我的简书[文章](http://www.jianshu.com/p/756f36b2a672)
 
+### 顺便提及下关于本地的代码如何git管理主要以下几步
+1. git init.                 //当前需要提交的文件路径，和github上面XXXX.git一致
+2. git add filename
+3. git commit -m '提交信息说明' //添加描述
+4. git pull //数据同步
+5. git push origin master //提交数据
+### 联系
+* 留言或者加我QQ：578545715
         
-        
-        
