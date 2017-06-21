@@ -9,7 +9,7 @@
 
 ### Usage
 `platform :ios, '7.0'`
-```swift
+```objc
 target 'Your Project' do
     pod 'SwiftFullScreenPop', '~>1.0.0'
 end
@@ -74,7 +74,8 @@ DispatchQueue.once(token: Static.token) {
             }
         }
 ```
-* 具体看Demo代码。参考：[forkingdog](https://github.com/forkingdog/FDFullscreenPopGesture)
+* 具体看本文Demo代码。
+* 参考：[forkingdog](https://github.com/forkingdog/FDFullscreenPopGesture)
 
 ### 在实现cocoaPods遇到的坑
 ```objc
