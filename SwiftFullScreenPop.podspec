@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.name         = "SwiftFullScreenPop"
   s.version      = "1.0.0"
-  s.summary      = "Swift3.0 use it to resolve navigationController interactivePopGestureRecognizer can't use when a custom navigationBar or used leftBarButtonItem to back and hidden navigationBar caused bug"
+  s.summary      = "to resolve custom navigationBar or hide use fullsreenPod on swift3.0"
   s.homepage     = "https://github.com/LeeFengHY/SwiftFullScreenPop"
   s.license      = "MIT"
   s.author       = { "leefenghy" => "578545715@qq.com" }
