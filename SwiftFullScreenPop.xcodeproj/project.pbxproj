@@ -13,6 +13,9 @@
 		EE1C179C1EFA1BC800DF3CA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1C179A1EFA1BC800DF3CA5 /* Main.storyboard */; };
 		EE1C179E1EFA1BC800DF3CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1C179D1EFA1BC800DF3CA5 /* Assets.xcassets */; };
 		EE1C17A11EFA1BC800DF3CA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1C179F1EFA1BC800DF3CA5 /* LaunchScreen.storyboard */; };
+		EE1C17AA1EFA1BD700DF3CA5 /* NavigationController+FullscreenPopGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1C17A81EFA1BD700DF3CA5 /* NavigationController+FullscreenPopGesture.swift */; };
+		EE1C17AB1EFA1BD700DF3CA5 /* LLNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1C17A91EFA1BD700DF3CA5 /* LLNavgationController.swift */; };
+		EE1C17AD1EFA1E8900DF3CA5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1C17AC1EFA1E8900DF3CA5 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		EE1C179D1EFA1BC800DF3CA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE1C17A01EFA1BC800DF3CA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE1C17A21EFA1BC800DF3CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE1C17A81EFA1BD700DF3CA5 /* NavigationController+FullscreenPopGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavigationController+FullscreenPopGesture.swift"; sourceTree = "<group>"; };
+		EE1C17A91EFA1BD700DF3CA5 /* LLNavgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLNavgationController.swift; sourceTree = "<group>"; };
+		EE1C17AC1EFA1E8900DF3CA5 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +62,12 @@
 		EE1C17931EFA1BC800DF3CA5 /* SwiftFullScreenPop */ = {
 			isa = PBXGroup;
 			children = (
+				EE1C17A81EFA1BD700DF3CA5 /* NavigationController+FullscreenPopGesture.swift */,
+				EE1C17A91EFA1BD700DF3CA5 /* LLNavgationController.swift */,
 				EE1C17941EFA1BC800DF3CA5 /* AppDelegate.swift */,
 				EE1C17961EFA1BC800DF3CA5 /* FirstViewController.swift */,
 				EE1C17981EFA1BC800DF3CA5 /* SecondViewController.swift */,
+				EE1C17AC1EFA1E8900DF3CA5 /* TableViewController.swift */,
 				EE1C179A1EFA1BC800DF3CA5 /* Main.storyboard */,
 				EE1C179D1EFA1BC800DF3CA5 /* Assets.xcassets */,
 				EE1C179F1EFA1BC800DF3CA5 /* LaunchScreen.storyboard */,
@@ -140,7 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE1C17991EFA1BC800DF3CA5 /* SecondViewController.swift in Sources */,
+				EE1C17AD1EFA1E8900DF3CA5 /* TableViewController.swift in Sources */,
 				EE1C17951EFA1BC800DF3CA5 /* AppDelegate.swift in Sources */,
+				EE1C17AB1EFA1BD700DF3CA5 /* LLNavgationController.swift in Sources */,
+				EE1C17AA1EFA1BD700DF3CA5 /* NavigationController+FullscreenPopGesture.swift in Sources */,
 				EE1C17971EFA1BC800DF3CA5 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

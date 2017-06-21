@@ -12,7 +12,10 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.isPrefersNavigationBarHidden = true
+        title = "first"
+        view.backgroundColor = UIColor.lightGray
+
     }
 
     override func didReceiveMemoryWarning() {

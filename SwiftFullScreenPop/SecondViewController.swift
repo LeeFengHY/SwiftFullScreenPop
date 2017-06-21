@@ -12,7 +12,10 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        isInteractivePopDisable = true
+        title = "Second"
+        view.backgroundColor = UIColor.blue
+        self.navigationController?.interactivePopGestureRecognizer
     }
 
     override func didReceiveMemoryWarning() {
