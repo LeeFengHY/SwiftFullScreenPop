@@ -7,14 +7,14 @@
 * 解决当某个界面navigationBar隐藏时下个界面有导航导致侧滑返回体验很差。
 * 解决UIScrollView不能使用侧滑返回。
 
-### How to use
+### CocoaPods
 `platform :ios, '7.0'`
 ```objc
 target 'Your Project' do
     pod 'SwiftFullScreenPop', '~>1.0.0'
 end
 ```
-### Example
+### Usage
 * 可以在自己的UINavigationController基类里面加入下面代码
 ```swift
  override func viewDidLoad() {
