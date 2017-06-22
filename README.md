@@ -93,6 +93,21 @@ DispatchQueue.once(token: Static.token) {
 3. git commit -m '提交信息说明' //添加描述
 4. git pull //数据同步
 5. git push origin master //提交数据
+* 遇到如下错误
+```objc
+error: failed to push some refs to 'git@github.com:LeeFengHY/SwiftFullScreenPop.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+是因为远程repository和我本地的repository冲突导致的，如下解决方法：
+* 1:<br>
+`git pull origin master` <br>
+`git push -u origin master`
+* 2:若不想merge远程和本地修改，可以先创建新的分支：<br>
+`git branch [name]` <br>
+`git push -u origin [name]`
 ### 联系
 * 留言或者加我QQ：578545715
         
