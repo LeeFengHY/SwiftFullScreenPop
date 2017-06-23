@@ -11,7 +11,7 @@
 `platform :ios, '7.0'`
 ```objc
 target 'Your Project' do
-    pod 'SwiftFullScreenPop', '~>1.0.0'
+    pod 'SwiftFullScreenPop', '~>1.0'
 end
 ```
 ### Usage
@@ -21,7 +21,6 @@ end
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         UINavigationController.swizzle()
-        UIViewController.viewControllerSwizzle()
     }
 ```
 * 在ViewController里面直接使用

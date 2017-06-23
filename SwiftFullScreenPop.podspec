@@ -7,7 +7,6 @@
 #
 
 Pod::Spec.new do |s|
-
   s.name         = "SwiftFullScreenPop"
   s.version      = "1.0"
   s.summary      = "to resolve custom navigationBar or hide use fullsreenPop on swift3.0"
