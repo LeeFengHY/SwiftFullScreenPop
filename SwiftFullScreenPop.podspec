@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.author       = { "leefenghy" => "578545715@qq.com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/LeeFengHY/SwiftFullScreenPop.git", :tag => "1.0.0" }
-  s.source_files  = "SwiftFullScreenPop/NavigationController+FullscreenPopGesture.swift"
+  s.source_files  = "SwiftFullScreenPop/FullScreenPopGestureRecognizer.swift"
   s.frameworks = "UIKit", "Foundation"
   s.requires_arc = true
 end
