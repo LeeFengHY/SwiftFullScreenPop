@@ -1,10 +1,3 @@
-//
-//  NavigationController+FullscreenPopGesture.swift
-//  LLPanKe
-//
-//  Created by QFWangLP on 2017/6/16.
-//  Copyright © 2017年 leefenghy. All rights reserved.
-//
 
 import Foundation
 import UIKit

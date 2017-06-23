@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.summary      = "to resolve custom navigationBar or hide use fullsreenPop on swift3.0"
   s.homepage     = "https://github.com/LeeFengHY/SwiftFullScreenPop"
   s.license      = "MIT"
-  s.author       = { "leefenghy" => "578545715@qq.com" }
+  s.author       = {"leefenghy" => "578545715@qq.com"}
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/LeeFengHY/SwiftFullScreenPop.git", :tag => "1.0.0" }
   s.source_files  = "SwiftFullScreenPop/FullScreenPopGestureRecognizer.swift"
