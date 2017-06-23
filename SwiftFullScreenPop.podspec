@@ -10,17 +10,13 @@ Pod::Spec.new do |s|
 
   s.name         = "SwiftFullScreenPop"
   s.version      = "1.0.0"
-  s.summary      = "to resolve custom navigationBar or hide use fullsreenPod on swift3.0"
+  s.summary      = "to resolve custom navigationBar or hide use fullsreenPop on swift3.0"
   s.homepage     = "https://github.com/LeeFengHY/SwiftFullScreenPop"
   s.license      = "MIT"
   s.author       = { "leefenghy" => "578545715@qq.com" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/LeeFengHY/SwiftFullScreenPop.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/LeeFengHY/SwiftFullScreenPop.git", :tag => "1.0.0" }
   s.source_files  = "SwiftFullScreenPop/NavigationController+FullscreenPopGesture.swift"
   s.frameworks = "UIKit", "Foundation"
   s.requires_arc = true
-
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
-
 end
