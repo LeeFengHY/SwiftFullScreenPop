@@ -42,7 +42,7 @@ extension UINavigationController
         }
     }
     //
-    var viewControllerBaseNavigationBarAppearanceEnabled: Bool
+    public var viewControllerBaseNavigationBarAppearanceEnabled: Bool
     {
         get {
             let number = objc_getAssociatedObject(self, AssociatedKey.navigationBarAppearanceEnabled) as? Bool
@@ -89,6 +89,7 @@ extension UINavigationController
                 method_exchangeImplementations(originalMethod, swizzlerMethod)
             }
         }
+        UIViewController.viewControllerSwizzle()
     }
 
     // 自定义push viewController method
@@ -128,7 +129,7 @@ extension UINavigationController
 typealias ViewControllerWillAppearInjectBlock = (_ viewController: UIViewController, _ animated: Bool) -> Void
 extension UIViewController
 {
-    class public func viewControllerSwizzle()
+    class fileprivate func viewControllerSwizzle()
     {
         struct Static {
             static var token = "token-viewController"
@@ -196,7 +197,7 @@ extension UIViewController
         static let willAppearInjectBlock = UnsafeRawPointer.init(bitPattern: "willAppearInjectBlock".hash)
     }
     // 取消侧滑 default is false, true为不支持侧滑返回
-    var isInteractivePopDisable: Bool
+    public var isInteractivePopDisable: Bool
     {
         get {
             let interactivePopDisable = objc_getAssociatedObject(self, AssociatedKey.interactivePopDisable) as? Bool
@@ -207,7 +208,7 @@ extension UIViewController
         }
     }
     // default is false navgationBar doesn't hid, if true the navgationBar is hidden
-    var isPrefersNavigationBarHidden: Bool
+    public var isPrefersNavigationBarHidden: Bool
     {
         get {
             let prefersNavigationBarHidden = objc_getAssociatedObject(self, AssociatedKey.navgationBarHidden) as? Bool

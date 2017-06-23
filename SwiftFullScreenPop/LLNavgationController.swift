@@ -14,7 +14,6 @@ class LLNavgationController: UINavigationController,UINavigationControllerDelega
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         UINavigationController.swizzle()
-        UIViewController.viewControllerSwizzle()
         self.delegate = self as UINavigationControllerDelegate
     }
     
