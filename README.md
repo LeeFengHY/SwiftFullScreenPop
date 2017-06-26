@@ -11,7 +11,7 @@
 `platform :ios, '7.0'`
 ```objc
 target 'Your Project' do
-    pod 'SwiftFullScreenPop', '~>1.0'
+    pod 'SwiftFullScreenPop'
 end
 ```
 ### Usage
