@@ -17,6 +17,10 @@ class _fullscreenPopgestureRecognizerDelegate: NSObject,UIGestureRecognizerDeleg
         if translation.x <= 0{
             return false
         }
+        let maximumAllowedDistance = topViewController?.maximumInteractiveDistanceToLeft
+        if  translation.x > maximumAllowedDistance! {
+            return false
+        }
         return true
     }
 }
@@ -195,6 +199,7 @@ extension UIViewController
         static let interactivePopDisable = UnsafeRawPointer.init(bitPattern: "interactivePopDisable".hash)
         static let navgationBarHidden = UnsafeRawPointer.init(bitPattern: "navgationBarHidden".hash)
         static let willAppearInjectBlock = UnsafeRawPointer.init(bitPattern: "willAppearInjectBlock".hash)
+        static let maximumAllowedDistance = UnsafeRawPointer.init(bitPattern: "maximumAllowedDistance".hash)
     }
     // 取消侧滑 default is false, true为不支持侧滑返回
     public var isInteractivePopDisable: Bool
@@ -217,6 +222,20 @@ extension UIViewController
         set {
             objc_setAssociatedObject(self, AssociatedKey.navgationBarHidden, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
+    }
+    // The gestureRecognizer respond distance ,default 50
+    public var maximumInteractiveDistanceToLeft: CGFloat
+    {
+        get
+        {
+            let maximumAllowedDistance = objc_getAssociatedObject(self, AssociatedKey.maximumAllowedDistance) as? CGFloat
+            return maximumAllowedDistance ?? CGFloat(50)
+        }
+        set
+        {
+            objc_setAssociatedObject(self, AssociatedKey.maximumAllowedDistance, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+        }
+        
     }
     
 }
